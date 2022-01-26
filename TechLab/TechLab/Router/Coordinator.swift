@@ -7,11 +7,21 @@
 
 import UIKit
 
-protocol Coordinator {
-    var childCoordinators: [Coordinator] { get set }
+protocol Coordinator: AnyObject {
+    
+    var rootViewController: UIViewController? { get }
+    var childCoordinators: [Coordinator] { get set}
     var navigationController: UINavigationController { get set }
     
-    func setupWindow()
-    func setupStarterCoordinator()
     func start()
+    func push(coordinator: Coordinator)
+}
+
+extension Coordinator {
+    func push(coordinator: Coordinator) {
+        childCoordinators.append(coordinator)
+        coordinator.start()
+        guard let rootViewController = coordinator.rootViewController else { fatalError() }
+        navigationController.pushViewController(rootViewController, animated: true)
+    }
 }

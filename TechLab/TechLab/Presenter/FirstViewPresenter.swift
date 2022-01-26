@@ -7,25 +7,23 @@
 
 import UIKit
 
-protocol FirstViewPresenterDelegate: class {
-    func didEnterName(_ userName: String)
+protocol FirstViewPresenterDelegate: AnyObject {
+  
 }
 
 class FirstViewPresenter {
     
     let view: FirstView
-    let service: PersistenceService
     weak var delegate: FirstViewPresenterDelegate?
     
-    init(service: PersistenceService, view: FirstView, delegate: FirstViewPresenterDelegate?) {
-        self.service = service
+    init(view: FirstView, delegate: FirstViewPresenterDelegate?) {
         self.view = view
         self.delegate = delegate
     }
     
     func load() {
-        view.setBtnText("Submit!!!")
-        view.setTextFieldHint("Tell me your name")
+//        view.setBtnText("Submit!!!")
+//        view.setTextFieldHint("Tell me your name")
     }
     
     func persist(userName: String?) {
@@ -34,7 +32,5 @@ class FirstViewPresenter {
             return
         }
         
-        service.persist(userName: userName)
-        delegate?.didEnterName(userName)
     }
 }

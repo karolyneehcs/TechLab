@@ -6,32 +6,24 @@
 //
 
 import UIKit
+import Foundation
 
 class MainCoordinator: Coordinator {
+    var rootViewController: UIViewController?
+    var childCoordinators: [Coordinator]
+    var navigationController: UINavigationController
+    let window: UIWindow!
     
-    var childCoordinators = [Coordinator]()
-    private let window: UIWindow
-    internal var navigationController: UINavigationController
-    var starterCoordinator: Coordinator!
-        
     init(window: UIWindow = UIWindow(),
         navigationController: UINavigationController = UINavigationController()) {
         self.window = window
         self.navigationController = navigationController
-    setupWindow()
-    setupStarterCoordinator()
-        }
-        
-        func setupWindow() {
+        self.childCoordinators = []
+    }
+    
+    func start() {
         self.window.rootViewController = navigationController
         self.window.makeKeyAndVisible()
-        }
-
-        func setupStarterCoordinator() {
-            starterCoordinator = FeatureCoordinator(navigationController: navigationController) as! Coordinator
-        }
-
-        func start() {
-        starterCoordinator?.start()
-        }
+        push(coordinator: FirstScreenCoordinator(navigationController: navigationController))
+    }
 }

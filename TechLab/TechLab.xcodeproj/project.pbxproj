@@ -17,12 +17,14 @@
 		750AAF782795FFFD000CC2DE /* TechLabUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750AAF772795FFFD000CC2DE /* TechLabUITestsLaunchTests.swift */; };
 		750AAF85279602E6000CC2DE /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750AAF84279602E6000CC2DE /* MainCoordinator.swift */; };
 		750AAF8A2796E64E000CC2DE /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750AAF892796E64E000CC2DE /* Coordinator.swift */; };
-		750AAF8C2796E8FE000CC2DE /* FeatureCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750AAF8B2796E8FE000CC2DE /* FeatureCoordinator.swift */; };
-		750AAF8E2796E9E4000CC2DE /* FeatureSceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750AAF8D2796E9E4000CC2DE /* FeatureSceneFactory.swift */; };
 		750AAF902796EA25000CC2DE /* FirstViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750AAF8F2796EA24000CC2DE /* FirstViewPresenter.swift */; };
 		750AAF922796EA74000CC2DE /* SecondViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750AAF912796EA73000CC2DE /* SecondViewPresenter.swift */; };
-		750AAF962796F3F6000CC2DE /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750AAF952796F3F6000CC2DE /* PersistenceService.swift */; };
 		750AAF982796F71B000CC2DE /* ViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750AAF972796F71B000CC2DE /* ViewControllerExtensions.swift */; };
+		750AAFA127979B9C000CC2DE /* FirstScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750AAFA027979B9C000CC2DE /* FirstScreenCoordinator.swift */; };
+		750AAFA32797A4E7000CC2DE /* SecondScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750AAFA22797A4E7000CC2DE /* SecondScreenCoordinator.swift */; };
+		750AAFA5279EE928000CC2DE /* FirstViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750AAFA4279EE928000CC2DE /* FirstViewController+Extension.swift */; };
+		750AAFAB279F1652000CC2DE /* DMSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 750AAFAA279F163F000CC2DE /* DMSans-Bold.ttf */; };
+		750AAFDB27A05D46000CC2DE /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750AAFDA27A05D46000CC2DE /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,12 +59,14 @@
 		750AAF772795FFFD000CC2DE /* TechLabUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechLabUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		750AAF84279602E6000CC2DE /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		750AAF892796E64E000CC2DE /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		750AAF8B2796E8FE000CC2DE /* FeatureCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCoordinator.swift; sourceTree = "<group>"; };
-		750AAF8D2796E9E4000CC2DE /* FeatureSceneFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureSceneFactory.swift; sourceTree = "<group>"; };
 		750AAF8F2796EA24000CC2DE /* FirstViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewPresenter.swift; sourceTree = "<group>"; };
 		750AAF912796EA73000CC2DE /* SecondViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewPresenter.swift; sourceTree = "<group>"; };
-		750AAF952796F3F6000CC2DE /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
 		750AAF972796F71B000CC2DE /* ViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtensions.swift; sourceTree = "<group>"; };
+		750AAFA027979B9C000CC2DE /* FirstScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenCoordinator.swift; sourceTree = "<group>"; };
+		750AAFA22797A4E7000CC2DE /* SecondScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenCoordinator.swift; sourceTree = "<group>"; };
+		750AAFA4279EE928000CC2DE /* FirstViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FirstViewController+Extension.swift"; sourceTree = "<group>"; };
+		750AAFAA279F163F000CC2DE /* DMSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-Bold.ttf"; sourceTree = "<group>"; };
+		750AAFDA27A05D46000CC2DE /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +122,7 @@
 				750AAF87279602F2000CC2DE /* View */,
 				750AAF86279602EA000CC2DE /* Model */,
 				750AAF542795FFFB000CC2DE /* AppDelegate.swift */,
+				750AAFAA279F163F000CC2DE /* DMSans-Bold.ttf */,
 				750AAF562795FFFB000CC2DE /* SceneDelegate.swift */,
 				750AAF5D2795FFFD000CC2DE /* Assets.xcassets */,
 				750AAF5F2795FFFD000CC2DE /* LaunchScreen.storyboard */,
@@ -154,6 +159,8 @@
 			isa = PBXGroup;
 			children = (
 				750AAF582795FFFB000CC2DE /* FirstViewController.swift */,
+				750AAFA4279EE928000CC2DE /* FirstViewController+Extension.swift */,
+				750AAFDA27A05D46000CC2DE /* Colors.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -171,11 +178,10 @@
 		750AAF992796FE94000CC2DE /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				750AAF84279602E6000CC2DE /* MainCoordinator.swift */,
 				750AAF892796E64E000CC2DE /* Coordinator.swift */,
-				750AAF8B2796E8FE000CC2DE /* FeatureCoordinator.swift */,
-				750AAF8D2796E9E4000CC2DE /* FeatureSceneFactory.swift */,
-				750AAF952796F3F6000CC2DE /* PersistenceService.swift */,
+				750AAFA027979B9C000CC2DE /* FirstScreenCoordinator.swift */,
+				750AAFA22797A4E7000CC2DE /* SecondScreenCoordinator.swift */,
+				750AAF84279602E6000CC2DE /* MainCoordinator.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -286,6 +292,7 @@
 			files = (
 				750AAF612795FFFD000CC2DE /* LaunchScreen.storyboard in Resources */,
 				750AAF5E2795FFFD000CC2DE /* Assets.xcassets in Resources */,
+				750AAFAB279F1652000CC2DE /* DMSans-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,13 +318,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				750AAF982796F71B000CC2DE /* ViewControllerExtensions.swift in Sources */,
+				750AAFDB27A05D46000CC2DE /* Colors.swift in Sources */,
+				750AAFA127979B9C000CC2DE /* FirstScreenCoordinator.swift in Sources */,
 				750AAF922796EA74000CC2DE /* SecondViewPresenter.swift in Sources */,
 				750AAF592795FFFB000CC2DE /* FirstViewController.swift in Sources */,
+				750AAFA32797A4E7000CC2DE /* SecondScreenCoordinator.swift in Sources */,
+				750AAFA5279EE928000CC2DE /* FirstViewController+Extension.swift in Sources */,
 				750AAF85279602E6000CC2DE /* MainCoordinator.swift in Sources */,
-				750AAF8E2796E9E4000CC2DE /* FeatureSceneFactory.swift in Sources */,
 				750AAF8A2796E64E000CC2DE /* Coordinator.swift in Sources */,
-				750AAF962796F3F6000CC2DE /* PersistenceService.swift in Sources */,
-				750AAF8C2796E8FE000CC2DE /* FeatureCoordinator.swift in Sources */,
 				750AAF552795FFFB000CC2DE /* AppDelegate.swift in Sources */,
 				750AAF902796EA25000CC2DE /* FirstViewPresenter.swift in Sources */,
 				750AAF572795FFFB000CC2DE /* SceneDelegate.swift in Sources */,
@@ -495,7 +503,6 @@
 				INFOPLIST_FILE = TechLab/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -522,7 +529,6 @@
 				INFOPLIST_FILE = TechLab/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
